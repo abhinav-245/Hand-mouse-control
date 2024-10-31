@@ -38,38 +38,36 @@ Make sure you have the following installed on your system:
    git clone https://github.com/yourusername/hand-gesture-recognition.git
    cd hand-gesture-recognition
 Install required packages:
-
-bash
-Copy code
-pip install opencv-python mediapipe pyautogui numpy scikit-learn joblib
-pip install -r requirements.txt
-Usage
+   ```bash
+   pip install opencv-python mediapipe pyautogui numpy scikit-learn joblib
+   pip install -r requirements.txt
+   ```
+##Usage
 Capture Data: Run the capture_data.py script to collect gesture data:
 
-bash
-Copy code
+```bash
 python capture_data.py
+```
 Train the Model: After capturing data, train your model with the train_model.py script:
 
-bash
-Copy code
+```bash
 python train_model.py
+```
 Run the Model: To start using the gesture recognition for mouse control, run the run_model.py script:
 
-bash
-Copy code
+```bash
 python run_model.py
+```
 Exit: Press q to quit the application.
 
-Training the Model
+##Training the Model
 The model is trained using the collected gesture data. Make sure to define your gestures in the capture_data.py script and label them correctly. The training process involves normalizing the data and using a chosen machine learning algorithm (e.g., KNN, SVM, Random Forest).
 
 Example Gesture Setup
 You can customize the gestures by modifying the capture_data.py file. Ensure that you collect enough data samples for each gesture you plan to recognize.
 
-File Structure
-bash
-Copy code
+##File Structure
+```bash
 hand-gesture-recognition/
 ├── capture_data.py       # Script for capturing gesture data
 ├── train_model.py        # Script for training the machine learning model
@@ -77,7 +75,8 @@ hand-gesture-recognition/
 ├── gesture_model.joblib   # Saved model after training
 ├── requirements.txt       # List of required packages
 └── README.md              # Project documentation
-Contributing
+```
+##Contributing
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
 Fork the repository.
