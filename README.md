@@ -1,7 +1,5 @@
 # Hand Gesture Recognition for Virtual Mouse Control
 
-![Gesture Control](https://via.placeholder.com/600x200.png?text=Hand+Gesture+Recognition+for+Virtual+Mouse+Control)
-
 ## Overview
 
 This project implements a hand gesture recognition system that allows users to control their computer's mouse using hand gestures. By leveraging machine learning algorithms and the MediaPipe library for hand tracking, this application enables intuitive interaction with your computer without the need for traditional input devices.
@@ -33,10 +31,11 @@ Make sure you have the following installed on your system:
 
 ### Step-by-step Installation
 
-1. **Clone the repository:**
+**Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/hand-gesture-recognition.git
    cd hand-gesture-recognition
+   ```
 Install required packages:
    ```bash
    pip install opencv-python mediapipe pyautogui numpy scikit-learn joblib
