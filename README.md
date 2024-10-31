@@ -42,7 +42,7 @@ Install required packages:
    pip install opencv-python mediapipe pyautogui numpy scikit-learn joblib
    pip install -r requirements.txt
    ```
-##Usage
+## Usage
 Capture Data: Run the capture_data.py script to collect gesture data:
 
 ```bash
@@ -60,13 +60,13 @@ python run_model.py
 ```
 Exit: Press q to quit the application.
 
-##Training the Model
+## Training the Model
 The model is trained using the collected gesture data. Make sure to define your gestures in the capture_data.py script and label them correctly. The training process involves normalizing the data and using a chosen machine learning algorithm (e.g., KNN, SVM, Random Forest).
 
 Example Gesture Setup
 You can customize the gestures by modifying the capture_data.py file. Ensure that you collect enough data samples for each gesture you plan to recognize.
 
-##File Structure
+## File Structure
 ```bash
 hand-gesture-recognition/
 ├── capture_data.py       # Script for capturing gesture data
@@ -76,7 +76,7 @@ hand-gesture-recognition/
 ├── requirements.txt       # List of required packages
 └── README.md              # Project documentation
 ```
-##Contributing
+## Contributing
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
 Fork the repository.
@@ -84,10 +84,10 @@ Create a new branch (e.g., feature/your-feature).
 Make your changes and commit them.
 Push your changes to your forked repository.
 Open a pull request describing your changes.
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgments
+## Acknowledgments
 MediaPipe for hand tracking capabilities.
 OpenCV for image processing.
 scikit-learn for machine learning algorithms.
