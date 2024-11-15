@@ -17,7 +17,8 @@ cap = cv2.VideoCapture(0)
 screen_width, screen_height = pyautogui.size()
 
 def get_finger_position(landmarks):
-    x = landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x
+    # Adjusted to fix mirror direction issue
+    x = (1 - landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x)  # Flip horizontal
     y = landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y
     return int(x * screen_width), int(y * screen_height)
 
@@ -40,7 +41,7 @@ while True:
             # Control mouse based on gesture
             if predicted_gesture == 'move':
                 x, y = get_finger_position(hand_landmarks)
-                pyautogui.moveTo(x, y)
+                pyautogui.moveTo(x, y, duration=0.1)  # Smooth movement
             elif predicted_gesture == 'click':
                 pyautogui.click()
 
